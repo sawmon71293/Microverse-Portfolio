@@ -14,7 +14,6 @@ REQUIRED SECTIONS:
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   
 - [💻 Getting Started](#getting-started)
@@ -27,9 +26,11 @@ REQUIRED SECTIONS:
 
 Personal-portfolio is the first portfolio project to showcase my personal projects to the potential employers
 
-## 🛠 Built With <a name="built-with">HTML</a>
 
-### Tech Stack <a name="tech-stack">CSS</a>
+
+### Tech Stack 
+<a name="built-with">HTML</a>
+<a name="tech-stack">CSS</a>
 <a name="tech-stack">Javascript</a>
 
 
