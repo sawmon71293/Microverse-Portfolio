@@ -29,14 +29,11 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://ruby-lang.org/">Ruby</a></li>
-  </ul>
-</details>
+<a name="built-with">HTML,</a>
+<a name="tech-stack">CSS,</a>
+<a name="tech-stack">Javascript</a>
 
 <!-- Features -->
 
@@ -66,7 +63,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Code editor like MS Visual Studio Code
+- Code editor like Visual Studio Code
 
 ### Setup
 
@@ -82,9 +79,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd oou_library
-  bundle install
-  npm i
+    VS code
 ```
 
 ### Usage
@@ -93,7 +88,7 @@ To run the project, execute the following command:
 
 ```sh
   code .
-
+  open the index file with live server
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,6 +146,6 @@ I would like to thank Microverse for the opportunity to dream big.
 
 ## 📝 License <a name="license"></a>
 
-This project is [GNU](./LICENSE) licensed.
+This project is [GNsU](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
