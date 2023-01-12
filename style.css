@@ -1,3 +1,124 @@
-#hello {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+body{
+  padding: 0;
+  margin:0 auto;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+  font-size: 62.5%;
+  max-width: 1042px;
+  height: 100vh;
+  background-color: #F9FAFF;
+}
+
+li{
+  list-style:none;
+}
+a{
+  color:black;
+  text-decoration: none;
+
+}
+.navbar{
+  min-height:56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: White;
+}
+
+.nav-menu{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:60px;
+}
+
+.nav-branding, .nav-item{
+  font-size: 1rem;
+}
+.nav-link{
+  transition:0.7s ease;
+}
+.nav-link:hover{
+  text-decoration: underline;
+ 
+}
+.bar{
+  display:block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition:all 0.3s ease-in-out;
+  background-color: grey;
+
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity:0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  display:none;
+}
+
+.nav-item{
+  margin:16px 0;
+}
+
+.nav-menu.active{
+  display:block;
+  position:fixed;
+  top:56px;
+  left: -39px;
+  width:100%;
+  text-align:center;
+  transition:0.3s;
+  background-color: white;
+  
+}
+
+.profile-pic{
+    height: 200px;
+    width: 200px;
+    background-color: #FDC435;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  
+}
+#pic{
+    margin: auto;
+    display: block;
+    width:150px;
+    border-radius: 50%;
+}
+main{
+  position: relative;
+  top:56px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.move{
+  top:150px;
+  transition: 0.3s;
+}
+.center{
+  text-align: center;
+}
+#about{
+  font-weight: regular;
+  font-size: 15px;
+  padding:0 2rem;
+  
 }
