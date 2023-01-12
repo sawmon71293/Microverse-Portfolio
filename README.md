@@ -18,7 +18,7 @@ REQUIRED SECTIONS:
   
 - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
--
+
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 Personal-portfolio <a name="about-project"></a>
