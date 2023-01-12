@@ -22,14 +22,15 @@ REQUIRED SECTIONS:
 -
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello-Microverse <a name="about-project"></a>
+# 📖 Personal-portfolio <a name="about-project"></a>
 
 
-Hello-Microverse is the first microverse project such as install linters, add professional README file,add .gitignore file, write meaningful commits
+Personal-portfolio is the first portfolio project to showcase my personal projects to the potential employers
 
 ## 🛠 Built With <a name="built-with">HTML</a>
 
 ### Tech Stack <a name="tech-stack">CSS</a>
+<a name="tech-stack">Javascript</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
