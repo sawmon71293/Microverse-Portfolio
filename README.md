@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-- Built With
-- Getting Started
-- Authors
-- Lincense
-
+![S](https://user-images.githubusercontent.com/102650102/212134190-7ac324a6-f323-4c2b-ac30-44add2cedd26.png)
 
 <!-- TABLE OF CONTENTS -->
 
