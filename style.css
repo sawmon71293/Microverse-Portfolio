@@ -34,6 +34,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  display: none;
 }
 
 .nav-branding,
@@ -73,10 +74,6 @@ a {
 
 .nav-item {
   margin: 16px 0;
-}
-
-.nav-menu {
-  display: none;
 }
 
 .nav-menu.active {
