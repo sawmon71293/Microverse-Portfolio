@@ -41,7 +41,7 @@ Personal-portfolio is the first portfolio project to showcase my personal projec
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-You can use for your first microverse project using this template
+You can check out my porfolio
 
 
 <!-- AUTHORS -->
