@@ -65,6 +65,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .menu-wrap .menu {
   position: fixed;
   top: 0;
@@ -222,4 +223,4 @@ body {
   -webkit-filter: blur(6px);
 }
 
-/* End of menu*/
+/* End of menu */
