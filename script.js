@@ -1,13 +1,9 @@
-const hamburger=document.querySelector(".hamburger");
-const navMenu=document.querySelector(".nav-menu");
-const profilePic=document.querySelector("main");
-hamburger.addEventListener("click",()=>{
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        profilePic.classList.toggle("move");
-        
-})
-document.querySelectorAll(".nav-link").forEach(n =>n.addEventListener("click",()=>{
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-}))
+const brand = document.querySelector(".brand");
+const checkbox = document.querySelector(".toggler");
+const intro = document.querySelector(".intro");
+const overlay = document.querySelector(".menu");
+checkbox.addEventListener("click", function (e) {
+  brand.classList.toggle("blur");
+  intro.classList.toggle("blur");
+  overlay.classList.toggle("blur");
+});
