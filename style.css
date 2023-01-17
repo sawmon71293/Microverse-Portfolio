@@ -48,7 +48,7 @@ body {
 
 .menu-wrap .toggler {
   margin-right: 58px;
-  margin-top: 25px;
+  margin-top: 9px;
   z-index: 4;
   cursor: pointer;
   width: 50px;
@@ -58,7 +58,7 @@ body {
 
 .menu-wrap .hamburger {
   position: absolute;
-  top: 25px;
+  top: 5px;
   right: 38px;
   z-index: 3;
   width: 60px;
@@ -188,7 +188,7 @@ body {
 }
 
 .intro {
-  margin-top: 165px;
+  margin-top: 131px;
   margin-left: 24px;
   margin-right: 24px;
   max-width: 327px;
@@ -213,7 +213,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: var(--overlay-color);
 }
 
 .icons {
@@ -225,6 +225,13 @@ body {
 .blur {
   filter: blur(6px);
   -webkit-filter: blur(6px);
+}
+.intro ul {
+  list-style: none;
+  display: flex;
+}
+.intro li {
+  margin-right: 19px;
 }
 
 /* End of menu */
