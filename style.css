@@ -113,6 +113,10 @@ body {
   transition: opacity 0.4s ease;
 }
 
+.intro li {
+  margin-right: 19px;
+}
+
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
@@ -226,12 +230,10 @@ body {
   filter: blur(6px);
   -webkit-filter: blur(6px);
 }
+
 .intro ul {
   list-style: none;
   display: flex;
-}
-.intro li {
-  margin-right: 19px;
 }
 
 /* End of menu */
