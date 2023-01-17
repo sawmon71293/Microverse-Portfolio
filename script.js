@@ -5,5 +5,4 @@ const overlay = document.querySelector(".menu");
 checkbox.addEventListener("click", function (e) {
   brand.classList.toggle("blur");
   intro.classList.toggle("blur");
-  overlay.classList.toggle("blur");
 });
