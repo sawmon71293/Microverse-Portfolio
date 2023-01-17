@@ -47,7 +47,7 @@ body {
 }
 
 .menu-wrap .toggler {
-  margin-right: 58px;
+  margin-right: 36px;
   margin-top: 9px;
   z-index: 4;
   cursor: pointer;
@@ -59,7 +59,7 @@ body {
 .menu-wrap .hamburger {
   position: absolute;
   top: 5px;
-  right: 38px;
+  right: 5px;
   z-index: 3;
   width: 60px;
   height: 60px;
@@ -114,7 +114,7 @@ body {
 }
 
 .intro li {
-  margin-right: 19px;
+  margin-right: 23px;
 }
 
 .menu-wrap .menu > div > div > ul > li {
