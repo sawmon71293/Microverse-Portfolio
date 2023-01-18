@@ -85,6 +85,14 @@ body {
   z-index: 2;
 }
 
+.language li {
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 303px;
+  height: 66.72px;
+}
+
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   width: 200vw;
@@ -123,7 +131,7 @@ body {
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #fff;
+  color: #ffffff;
   padding-bottom: 40px;
   padding-left: 24px;
 }
@@ -133,7 +141,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.4s ease;
   height: 24px;
@@ -161,13 +169,13 @@ body {
 .menu-wrap .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
-  background: #fff;
+  background: #ffffff;
 }
 
 /* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
-  background: #fff;
+  background: #ffffff;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
@@ -364,7 +372,7 @@ body {
   width: 375px;
   height: 1263px;
   border-radius: 0 70px 0 0;
-  background: #fff;
+  background: #ffffff;
 }
 
 .top {
@@ -415,14 +423,6 @@ body {
   line-height: 20px;
 }
 
-.language li {
-  background: #f7f7f9;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  width: 303px;
-  height: 66.72px;
-}
-
 .showcase .mt-36 {
   margin-top: 36px;
 }
@@ -451,7 +451,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #fff;
+  color: #ffffff;
   padding-top: 103px;
   padding-bottom: 12px;
 }
@@ -463,22 +463,6 @@ body {
   text-align: center;
   color: #ebebff;
   margin-bottom: 80px;
-}
-
-.contact_form input {
-  background: #ffffff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  width: 327px;
-  height: 48px;
-  margin-bottom: 20px;
-}
-
-.contact_form textarea {
-  width: 327px;
-  height: 170px;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
 }
 
 input::-webkit-input-placeholder {
@@ -498,6 +482,22 @@ textarea::-webkit-input-placeholder {
   padding-top: 15px;
 }
 
+.contact_form input {
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.contact_form textarea {
+  width: 327px;
+  height: 170px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -507,10 +507,4 @@ textarea::-webkit-input-placeholder {
 
 .contact_form button {
   margin-bottom: 45px;
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1024px) {
 }
