@@ -93,6 +93,10 @@ body {
   height: 66.72px;
 }
 
+.showcase div {
+  margin-bottom: 36px;
+}
+
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   width: 200vw;
@@ -129,9 +133,23 @@ body {
   margin-right: 23px;
 }
 
+.skills li {
+  padding: 4px 12px;
+  background: #ebebff;
+  margin-right: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.block li {
+  margin: 0 12px;
+}
+
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #ffffff;
+  color: #fff;
   padding-bottom: 40px;
   padding-left: 24px;
 }
@@ -141,7 +159,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   transition: color 0.4s ease;
   height: 24px;
@@ -169,13 +187,13 @@ body {
 .menu-wrap .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
-  background: #ffffff;
+  background: #fff;
 }
 
 /* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
-  background: #ffffff;
+  background: #fff;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div {
@@ -260,7 +278,7 @@ body {
   gap: 12px;
   width: 327px;
   height: 552px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
@@ -312,10 +330,6 @@ body {
   color: #7a869a;
 }
 
-.block li {
-  margin: 0 12px;
-}
-
 .card_body {
   min-width: 295px;
 }
@@ -334,16 +348,6 @@ body {
   margin-top: 12px;
 }
 
-.skills li {
-  padding: 4px 12px;
-  background: #ebebff;
-  margin-right: 8px;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .button {
   font-style: normal;
   font-weight: 500;
@@ -357,7 +361,7 @@ body {
   color: #396df2;
   border: 1px solid #7f8cff;
   border-radius: 8px;
-  background: #ffffff;
+  background: #fff;
   width: 124px;
   height: 48px;
   margin-top: 24px;
@@ -372,7 +376,7 @@ body {
   width: 375px;
   height: 1263px;
   border-radius: 0 70px 0 0;
-  background: #ffffff;
+  background: #fff;
 }
 
 .top {
@@ -402,10 +406,6 @@ body {
 
 .mt-45 {
   margin-top: 45px;
-}
-
-.showcase div {
-  margin-bottom: 36px;
 }
 
 .w-48 {
@@ -451,7 +451,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #ffffff;
+  color: #fff;
   padding-top: 103px;
   padding-bottom: 12px;
 }
@@ -483,7 +483,7 @@ textarea::-webkit-input-placeholder {
 }
 
 .contact_form input {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 327px;
