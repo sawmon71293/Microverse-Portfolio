@@ -380,17 +380,17 @@ button:disabled {
   margin-bottom: 45px;
 }
 
-button:hover:enabled {
-  background: #6070ff;
-  color: #fff;
-}
-
 button:disabled,
 button[disabled] {
   color: #5e6c84;
   border: 1px solid #5e6c84;
   cursor: not-allowed;
   background: #fff;
+}
+
+button:hover:enabled {
+  background: #6070ff;
+  color: #fff;
 }
 
 .button1 {
