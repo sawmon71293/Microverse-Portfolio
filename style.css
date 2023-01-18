@@ -368,16 +368,17 @@ body {
   margin-top: 24px;
 }
 
-button:active {
-  background: #2230d2;
-}
-
-button:disabled {
-  background: #fff;
-}
-
 .contact_form button {
   margin-bottom: 45px;
+}
+
+button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+button:active {
+  background: #2230d2;
 }
 
 button:disabled,
@@ -386,11 +387,6 @@ button[disabled] {
   border: 1px solid #5e6c84;
   cursor: not-allowed;
   background: #fff;
-}
-
-button:hover:enabled {
-  background: #6070ff;
-  color: #fff;
 }
 
 .button1 {
