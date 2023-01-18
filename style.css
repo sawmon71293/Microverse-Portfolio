@@ -368,6 +368,27 @@ body {
   margin-top: 24px;
 }
 
+button:hover:enabled {
+  background: #6070ff;
+  color: #ffffff;
+}
+
+button:disabled,
+button[disabled] {
+  color: #5e6c84;
+  border: 1px solid #5e6c84;
+  cursor: not-allowed;
+  background: #fff;
+}
+
+button:active {
+  background: #2230d2;
+}
+
+button:disabled {
+  background: #fff;
+}
+
 .button1 {
   width: 138px;
   margin-top: 10px;
