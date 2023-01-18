@@ -368,9 +368,21 @@ body {
   margin-top: 24px;
 }
 
+button:active {
+  background: #2230d2;
+}
+
+button:disabled {
+  background: #fff;
+}
+
+.contact_form button {
+  margin-bottom: 45px;
+}
+
 button:hover:enabled {
   background: #6070ff;
-  color: #ffffff;
+  color: #fff;
 }
 
 button:disabled,
@@ -378,14 +390,6 @@ button[disabled] {
   color: #5e6c84;
   border: 1px solid #5e6c84;
   cursor: not-allowed;
-  background: #fff;
-}
-
-button:active {
-  background: #2230d2;
-}
-
-button:disabled {
   background: #fff;
 }
 
@@ -527,6 +531,6 @@ textarea::-webkit-input-placeholder {
   align-items: center;
 }
 
-.contact_form button {
-  margin-bottom: 45px;
+.inactive {
+  transform: rotate(-90deg);
 }
