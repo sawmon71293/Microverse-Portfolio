@@ -2,8 +2,6 @@
 
 ![S](https://user-images.githubusercontent.com/102650102/212134190-7ac324a6-f323-4c2b-ac30-44add2cedd26.png)
 
-
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -27,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 OOU Library <a name="about-project"></a>
+# 📖 Personal Portfolio <a name="about-project"></a>
 
 **Personal-portfolio** is an app to showcase my personal achievements.
 
