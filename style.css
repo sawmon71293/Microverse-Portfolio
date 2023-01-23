@@ -345,8 +345,8 @@ body {
 
 .skills {
   list-style: none;
-  display: flex;
   margin-top: 12px;
+  float: ;
 }
 
 .button {
