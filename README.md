@@ -27,7 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
+
 # 📖 Personal Portfolio <a name="about-project"></a>
+
 
 **Personal-portfolio** is an app to showcase my personal achievements.
 
