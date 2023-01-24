@@ -141,6 +141,7 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+  display: inline-block;
 }
 
 .block li {
@@ -346,7 +347,8 @@ body {
 .skills {
   list-style: none;
   margin-top: 12px;
-  float: ;
+  float: left;
+  margin-bottom: 12px;
 }
 
 .button {
