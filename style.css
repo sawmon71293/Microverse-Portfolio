@@ -680,6 +680,12 @@ textarea::-webkit-input-placeholder {
     order: 2;
   }
 
+  .portfolio {
+    width: 544px;
+    height: 448px;
+    margin-right: 46px;
+  }
+
   .flip1 .portfolio {
     margin-right: 0;
   }
@@ -687,12 +693,6 @@ textarea::-webkit-input-placeholder {
   .flip2 {
     order: 1;
     margin-left: 48px;
-    margin-right: 46px;
-  }
-
-  .portfolio {
-    width: 544px;
-    height: 448px;
     margin-right: 46px;
   }
 
