@@ -27,7 +27,7 @@
           </div>
         </nav>
       </header>
-      <section>
+      <section class="intro-center">
         <div class="intro">
           <h1 class="pb branding">
             I'm Saw Mon,
@@ -94,10 +94,10 @@
          </div>
         </div>
        <div class="card">
-         <header >
+         <header class="flip1">
           <img class="portfolio" src="img/portfolio2.png" alt="Portfolio">
          </header>
-         <div class="card_body">
+         <div class="card_body flip2">
           <h2 class="title">Tonic</h2>
           <div class="experience">
           <span class="subtitle">Canopy</span>
@@ -142,10 +142,10 @@
          </div>
         </div> 
          <div class="card">
-         <header >
+         <header class="flip1">
           <img class="portfolio" src="img/portfolio4.png" alt="Portfolio">
          </header>
-         <div class="card_body">
+         <div class="card_body flip2">
           <h2 class="title">Tonic</h2>
           <div class="experience">
           <span class="subtitle">Canopy</span>
@@ -160,6 +160,7 @@
           <ul class="skills">
             <li>html</li>
             <li>css</li>
+            <li>Ruby on rails</li>
             <li>javascript</li>
           </ul>
           <button class="button"> See project </button>
@@ -167,75 +168,79 @@
         </div>
     </section>
     <section class="about_myself">
-      <div class="intro top">
-        <h2 class="pb branding">
-          About 
-          <br />
-         Myself
-        </h2>
-        <p class="pb introduction">
-         Hello I am a software developer! I can help you build a product, feature or
-          website look through some of your work and experience! If you like
-          what you see and have a project you need coded, don't hesitate to
-          contact me.
-        </p>
-        <a href="#" class="pb connect">LET'S CONNECT</a>
-          <ul class="pb">
-          <li>
-            <a class="icons" href="mailto:sawmon71293@gmail.com">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a class="icons" href="https://twitter.com/sawmon34268255">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a class="icons" href="https://github.com/sawmon71293">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a class="icons" href="https://www.linkedin.com/in/saw-mon-han/">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          </ul>
-        <button class="button button1">Get my resume</button>
-        <ul class="showcase display-flex column">
-          <li class="mt-45">
-            <div class="display-flex">
-               <span>Language</span>
-              <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
-            </div>
-            <ul class="language display-flex column">
-              <li class="lang">
-                <img class="w-48" src="img/js.png" alt="Javascript">
-                <span>Javascript</span></li>
-              <li class="lang">
-                <img class="w-48" src="img/html.png" alt="HTML">
-                <span>HTML</span>
-              </li>
-              <li class="lang">
-                <img class="w-48" src="img/css.png" alt="CSS">
-                <span>CSS</span>
-              </li> 
+      <div class="intro top desktop-intro">
+        <div class="ml-25">
+          <h2 class="pb branding">
+            About
+            <br />
+           Myself
+          </h2>
+          <p class="pb introduction">
+           Hello I am a software developer! I can help you build a product, feature or
+            website look through some of your work and experience! If you like
+            what you see and have a project you need coded, don't hesitate to
+            contact me.
+          </p>
+          <a href="#" class="pb connect">LET'S CONNECT</a>
+            <ul class="pb">
+            <li>
+              <a class="icons" href="mailto:sawmon71293@gmail.com">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="icons" href="https://twitter.com/sawmon34268255">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="icons" href="https://github.com/sawmon71293">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="icons" href="https://www.linkedin.com/in/saw-mon-han/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
             </ul>
-          </li>
-          <li class="display-flex mt-36">
-            <span>Frameworks</span>
-            <ion-icon class="arrow inactive" name="chevron-down-outline"></ion-icon>
-          </li>
-         <li><div class="line"></div></li>
-          <li class="display-flex mt-36">
-            <span>Skills</span>
-            <ion-icon class="arrow inactive" name="chevron-down-outline"></ion-icon>
-          </li>
-          <li><div class="line"></div></li>
-        </ul>
+          <button class="button button1">Get my resume</button>
+        </div>
+        <div class="show-skills">
+          <ul class="showcase">
+            <li class="mt-45">
+              <div class="display-flex pl-12">
+                 <span>Language</span>
+                <ion-icon class="arrow" name="chevron-down-outline"></ion-icon>
+              </div>
+              <ul class="language pl-12">
+                <li class="lang">
+                  <img class="w-48" src="img/js.png" alt="Javascript">
+                  <span>Javascript</span></li>
+                <li class="lang">
+                  <img class="w-48" src="img/html.png" alt="HTML">
+                  <span>HTML</span>
+                </li>
+                <li class="lang">
+                  <img class="w-48" src="img/css.png" alt="CSS">
+                  <span>CSS</span>
+                </li>
+              </ul>
+            </li>
+            <li class="display-flex mt-36">
+              <span class="pl-12">Frameworks</span>
+              <ion-icon class="arrow inactive" name="chevron-down-outline"></ion-icon>
+            </li>
+           <li><div class="line"></div></li>
+            <li class="display-flex mt-36">
+              <span class="pl-12">Skills</span>
+              <ion-icon class="arrow inactive" name="chevron-down-outline"></ion-icon>
+            </li>
+            <li><div class="line"></div></li>
+          </ul>
+        </div>
       </div>
-    <form class="contact_form" action="https://formspree.io/f/mjvdkqyp" method="post">
+       <section class="contact_form">
       <div class="center">
         <h2 class="contactme">Contact me</h2>
         <p class="hook">If you have an application you are interested in developing,
@@ -243,16 +248,14 @@
           love to help with it.
         </p>
       </div>
-      <div>
-        <input type="text" placeholder="Yeremias" maxlength="30" required><br>
-        <input type="email" placeholder="natajayanj14@gmail.com" required><br>
-        <textarea placeholder="Write your message here" name="message" id="message" cols="30" rows="10" maxlength="500" required></textarea><br>
-        <button type="submit" class="button">Get in Touch</button>
+      <div  class="center">
+        <input type="text" placeholder="Yeremias"><br>
+        <input type="text" placeholder="natajayanj14@gmail.com"><br>
+        <textarea placeholder="Write your message here" name="message" id="message" cols="30" rows="10"></textarea><br>
+        <button  class="button ">Get in Touch</button>
       </div>
-    </form>
     </section>
-   
-
+    </section>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -262,5 +265,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
   </body>
 </html>
