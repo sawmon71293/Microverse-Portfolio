@@ -580,12 +580,12 @@ textarea::-webkit-input-placeholder {
     flex-direction: row;
   }
 
-  .intro .pb {
-    flex-direction: row;
-  }
-
   .pb {
     margin-top: 13px;
+  }
+
+  .intro .pb {
+    flex-direction: row;
   }
 
   .intro-flex {
@@ -629,6 +629,15 @@ textarea::-webkit-input-placeholder {
     display: flex;
   }
 
+  .language li {
+    width: 122px;
+    height: 120px;
+  }
+
+  .block li {
+    margin-right: 32px;
+  }
+
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     color: #344563;
@@ -663,8 +672,8 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    box-shadow: rgba(176, 176, 207, 0.25) 0px 30px 60px -12px,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    box-shadow: rgba(176, 176, 207, 0.25) 0 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
   }
 
   .flip1 {
@@ -705,7 +714,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .top {
-    padding-top: 0;
+    padding-top: 175px;
   }
 
   .about_myself .intro {
@@ -732,15 +741,6 @@ textarea::-webkit-input-placeholder {
 
   .show-skills {
     width: 650px;
-  }
-
-  .top {
-    padding-top: 175px;
-  }
-
-  .language li {
-    width: 122px;
-    height: 120px;
   }
 
   .lang {
@@ -795,9 +795,5 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .block li {
-    margin-right: 32px;
   }
 }
