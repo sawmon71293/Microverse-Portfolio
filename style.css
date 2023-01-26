@@ -49,6 +49,11 @@ body {
   text-decoration: none;
 }
 
+.brand:hover {
+  transform: rotate(360deg);
+  transition: transform .4s ease-in-out;
+}
+
 .menu-wrap .toggler {
   position: fixed;
   top: 5px;
