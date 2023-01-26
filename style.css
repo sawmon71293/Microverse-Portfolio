@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-  width: 375px;
+  min-width: 375px;
   height: 718px;
   background: url(img/bg.png) no-repeat white;
   background-size: cover;
@@ -49,10 +49,15 @@ body {
   text-decoration: none;
 }
 
+.brand:hover {
+  transform: rotate(360deg);
+  transition: transform 0.4s ease-in-out;
+}
+
 .menu-wrap .toggler {
-  position: relative;
+  position: fixed;
   top: 5px;
-  right: -106px;
+  right: 5px;
   z-index: 4;
   cursor: pointer;
   width: 50px;
@@ -61,7 +66,7 @@ body {
 }
 
 .menu-wrap .hamburger {
-  position: relative;
+  position: absolute;
   top: 5px;
   right: 5px;
   z-index: 3;
@@ -302,12 +307,17 @@ body {
   border-radius: 8px;
 }
 
+.portfolio:hover {
+  transform: scale(1.05);
+  transition-duration: var(--menu-speed);
+}
+
 .works {
   display: grid;
   row-gap: 88px;
   align-items: center;
   justify-content: center;
-  width: 372px;
+  min-width: 372px;
   padding-top: 114px;
   background: #e5e5e5;
 }
@@ -319,6 +329,11 @@ body {
   line-height: 44px;
   height: 36px;
   color: var(--title-color);
+}
+
+.title:hover {
+  transform: translate(4px, 4px);
+  transition-duration: var(--menu-speed);
 }
 
 .subtitle {
@@ -333,6 +348,11 @@ body {
 .experience {
   display: flex;
   margin-top: 20px;
+}
+
+.experience:hover {
+  transform: translate(4px, 4px);
+  transition-duration: var(--menu-speed);
 }
 
 .block {
@@ -356,11 +376,21 @@ body {
   margin-top: 20px;
 }
 
+.content:hover {
+  transform: translate(4px, 4px);
+  transition-duration: var(--menu-speed);
+}
+
 .skills {
   list-style: none;
   margin-top: 12px;
   float: left;
   margin-bottom: 12px;
+}
+
+.skills:hover {
+  transform: translate(4px, 4px);
+  transition-duration: var(--menu-speed);
 }
 
 .button {
@@ -409,7 +439,7 @@ button[disabled] {
 }
 
 .about_myself {
-  width: 375px;
+  min-width: 375px;
   height: 1263px;
   border-radius: 0 70px 0 0;
   background: #fff;
@@ -466,7 +496,7 @@ button[disabled] {
 .contact_form {
   position: relative;
   top: 95px;
-  width: 375px;
+  min-width: 375px;
   background: url(/img/contact_bg.png) no-repeat #6070ff;
   background-size: 375px;
   display: flex;
@@ -541,16 +571,19 @@ textarea::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   body {
     background: #e5e5e5;
+    overflow-x: hidden;
+    height: 100vh;
   }
 
   .wrapper {
-    width: auto;
+    width: 100vw;
     height: 916px;
+    max-width: 100%;
   }
 
   .intro {
-    margin-top: 360px;
-    min-width: 920px;
+    margin-top: 260px;
+    width: 600px;
   }
 
   .show-skills ul {
@@ -566,6 +599,8 @@ textarea::-webkit-input-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    max-width: 100%;
   }
 
   .brand {
@@ -612,11 +647,14 @@ textarea::-webkit-input-placeholder {
     position: relative;
     margin-top: 25px;
     background: none;
-    width: 20rem;
+    width: 100vw;
     height: 2rem;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     transform: scale(1);
     padding-top: 0;
+    margin-right: 80px;
   }
 
   .menu-wrap .menu > div > div {
@@ -664,8 +702,8 @@ textarea::-webkit-input-placeholder {
   .card {
     display: flex;
     flex-direction: row;
-    width: 1156px;
-    height: 496px;
+    width: 98%;
+    height: 430px;
   }
 
   .card:hover {
@@ -681,8 +719,8 @@ textarea::-webkit-input-placeholder {
   }
 
   .portfolio {
-    width: 544px;
-    height: 448px;
+    width: 100%;
+    height: 380px;
     margin-right: 46px;
   }
 
@@ -706,11 +744,12 @@ textarea::-webkit-input-placeholder {
 
   .desktop-intro {
     display: flex;
+    flex-direction: column;
   }
 
   .about_myself {
-    width: auto;
-    height: 924px;
+    width: 100vw;
+    height: 1300px;
   }
 
   .top {
@@ -718,17 +757,17 @@ textarea::-webkit-input-placeholder {
   }
 
   .about_myself .intro {
-    width: 1110px;
+    width: 100%;
     margin-left: 142px;
   }
 
   .line {
-    width: 684px;
+    width: 100%;
   }
 
   .ml-25 {
     margin-right: 25px;
-    width: 447px;
+    width: 80%;
   }
 
   .pl-12 {
@@ -740,7 +779,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .show-skills {
-    width: 650px;
+    width: 80%;
   }
 
   .lang {
@@ -759,7 +798,8 @@ textarea::-webkit-input-placeholder {
   }
 
   .contact_form {
-    width: auto;
+    width: 100vw;
+    max-width: 100%;
   }
 
   .hook {
@@ -795,5 +835,37 @@ textarea::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1042px) {
+  .intro {
+    margin-top: 360px;
+    min-width: 920px;
+  }
+
+  .desktop-intro {
+    flex-direction: row;
+  }
+
+  .ml-25 {
+    margin-right: 25px;
+    width: 40%;
+  }
+
+  .show-skills {
+    width: 40%;
+  }
+
+  .menu-wrap .menu > div {
+    margin-right: 145px;
+  }
+
+  .card {
+    height: 496px;
+  }
+
+  .portfolio {
+    height: 448px;
   }
 }
