@@ -55,7 +55,7 @@ This is to showcase my abilities.
 
 ## 🚀 Live Demo <a name="live-demo" title="Coming Soon"></a>
 
-This page has not been deployed yet. It will be updates when it is ready.
+https://sawmon71293.github.io/personal-portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
