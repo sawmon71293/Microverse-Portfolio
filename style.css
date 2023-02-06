@@ -499,7 +499,7 @@ button[disabled] {
   top: 95px;
   min-width: 375px;
   background: url(/img/contact_bg.png) no-repeat #6070ff;
-  background-size: 375px;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
