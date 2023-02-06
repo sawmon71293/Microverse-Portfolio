@@ -240,7 +240,7 @@ body {
 }
 
 .intro {
-  margin-top: 131px;
+  margin-top: 114px;
   margin-left: 24px;
   margin-right: 24px;
   width: 327px;
@@ -754,7 +754,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .top {
-    padding-top: 175px;
+    padding-top: 100px;
   }
 
   .about_myself .intro {
@@ -841,7 +841,7 @@ textarea::-webkit-input-placeholder {
 
 @media screen and (min-width: 1042px) {
   .intro {
-    margin-top: 360px;
+    margin-top: 142px;
     min-width: 920px;
   }
 

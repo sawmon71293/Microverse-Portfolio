@@ -2,9 +2,13 @@ const brand = document.querySelector(".brand");
 const checkbox = document.querySelector(".toggler");
 const intro = document.querySelector(".intro");
 const hamburger = document.querySelector(".hamburger");
+const works = document.querySelector(".works");
+const aboutMyself = document.querySelector(".about_myself");
 checkbox.addEventListener("click", function (e) {
   brand.classList.toggle("blur");
   intro.classList.toggle("blur");
+  works.classList.toggle("blur");
+  aboutMyself.classList.toggle("blur");
   if (checkbox.checked) {
     hamburger.style.position = "fixed";
   } else {
@@ -19,5 +23,7 @@ window.onresize = function () {
     $(".toggler").prop("checked", false);
     brand.classList.remove("blur");
     intro.classList.remove("blur");
+    works.classList.remove("blur");
+    aboutMyself.classList.remove("blur");
   }
 };
