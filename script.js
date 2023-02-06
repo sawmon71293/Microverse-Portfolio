@@ -2,6 +2,7 @@ const brand = document.querySelector(".brand");
 const checkbox = document.querySelector(".toggler");
 const intro = document.querySelector(".intro");
 const hamburger = document.querySelector(".hamburger");
+const works = document.querySelector(".works");
 checkbox.addEventListener("click", function (e) {
   brand.classList.toggle("blur");
   intro.classList.toggle("blur");
@@ -26,12 +27,12 @@ window.onresize = function () {
 
 function createCard(project, index) {
   let projectTemplate = `<div class="card">
-         <header id="header_${index + 1}" >
+         <header id="header_${++index}" >
           <img class="portfolio" src="img/${
             project.featureImage
           }" alt="Portfolio">
          </header>
-         <div class="card_body cb_${index + 1}">
+         <div class="card_body cb_${index}">
           <h2 class="title">${project.name}</h2>
           <div class="experience">
           <span class="subtitle">Canopy</span>
@@ -42,9 +43,9 @@ function createCard(project, index) {
           </div>
           <p class="content">${project.description}
           </p>
-          <ul class="skills project_${++index}">
+          <ul class="skills project_${index}">
           </ul>
-          <button class="button"> See project </button>
+          <button class="button" data-toggle="modal" data-target="#projectModal"> See project </button>
          </div>
         </div>`;
   works.innerHTML += projectTemplate;
@@ -103,5 +104,9 @@ window.onload = function () {
   ];
   projects.forEach((project, index) => {
     createCard(project, index);
+  });
+
+  $("#MybtnModal").click(function () {
+    $("#Mymodal").modal("show");
   });
 };
