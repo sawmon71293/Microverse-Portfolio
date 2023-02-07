@@ -37,11 +37,10 @@ window.onresize = () => {
 // card objects
 
 function createCard(project, index) {
-  let projectTemplate = `<div class="card">
-         <header id="header_${++index}" >
-          <img class="portfolio" src="img/${
-            project.featureImage
-          }" alt="Portfolio">
+  const projectTemplate = `<div class="card">
+        <header id="header_${(index += 1)}" >
+          <img class="portfolio" src="img/${project.featureImage}" 
+          alt="Portfolio">
          </header>
          <div class="card_body cb_${index}">
           <h2 class="title">${project.name}</h2>
@@ -61,20 +60,20 @@ function createCard(project, index) {
         </div>`;
   works.innerHTML += projectTemplate;
   project.techStack.forEach((item) => {
-    let list = document.createElement('li');
+    const list = document.createElement('li');
     list.innerText = item;
-    document.querySelector('.project_' + index).appendChild(list);
+    document.querySelector(`.project_${index}`).appendChild(list);
   });
 
   if (index % 2 === 0) {
-    let header = document.querySelector('#header_' + index);
-    let card_body = document.querySelector('.cb_' + index);
+    const header = document.querySelector(`#header_${index}`);
+    const cardBody = document.querySelector(`.cb_${index}`);
     header.classList.toggle('flip1');
-    card_body.classList.toggle('flip2');
+    cardBody.classList.toggle('flip2');
   }
 }
 
-window.onload = function () {
+window.onload = () => {
   const projects = [
     {
       name: 'Library',
@@ -115,9 +114,5 @@ window.onload = function () {
   ];
   projects.forEach((project, index) => {
     createCard(project, index);
-  });
-
-  $('#MybtnModal').click(function () {
-    $('#Mymodal').modal('show');
   });
 };
