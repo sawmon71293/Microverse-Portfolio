@@ -5,7 +5,7 @@ const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 function remove() {
-  toggle();
+  document.getElementById('toggle').checked = false;
   brand.classList.remove('blur');
   intro.classList.remove('blur');
   works.classList.remove('blur');
