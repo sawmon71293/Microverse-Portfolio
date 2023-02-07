@@ -1,30 +1,26 @@
 const brand = document.querySelector('.brand');
-const checkbox = document.querySelector('.toggler');
+const checkbox = document.querySelector('#toggle');
 const intro = document.querySelector('.intro');
 const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 const navlinks = document.getElementsByClassName('nav-links');
-const overlay = document.getElementsByClassName('overlay');
-
-checkbox.addEventListener('click', () => {
-  brand.classList.toggle('blur');
-  intro.classList.toggle('blur');
-  works.classList.toggle('blur');
-  aboutMyself.classList.toggle('blur');
+const overlay = document.querySelector('.overlay');
+function toggle() {
   if (checkbox.checked) {
     hamburger.style.position = 'fixed';
-    brand.classList.remove('blur');
-    intro.classList.remove('blur');
-    works.classList.remove('blur');
-    aboutMyself.classList.remove('blur');
+    brand.classList.toggle('blur');
+    intro.classList.toggle('blur');
+    works.classList.toggle('blur');
+    aboutMyself.classList.toggle('blur');
   } else {
     hamburger.style.position = 'absolute';
+    remove();
   }
-});
+}
 
 function remove() {
-  document.getElementsByClassName('toggler').checked = false;
+  document.getElementById('toggle').checked = false;
   brand.classList.remove('blur');
   intro.classList.remove('blur');
   works.classList.remove('blur');
