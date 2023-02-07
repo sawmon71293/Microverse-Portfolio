@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-color: #396df2;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
   background-color: #e5e5e5;
   overflow-x: hidden;
@@ -185,7 +185,7 @@ body {
 /* Hamburger Lines - Top & Bottom */
 .menu-wrap .hamburger > div::before,
 .menu-wrap .hamburger > div::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -710,8 +710,7 @@ textarea::-webkit-input-placeholder {
     cursor: pointer;
     border: 2px solid #a7aeff;
     border-radius: 24px;
-    box-shadow: rgba(176, 176, 207, 0.25) 0 30px 60px -12px,
-      rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+    box-shadow: grey 0 30px 60px -12px, black 0 18px 36px -18px;
   }
 
   .flip1 {
