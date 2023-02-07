@@ -4,8 +4,15 @@ const intro = document.querySelector('.intro');
 const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
-const navlinks = document.getElementsByClassName('nav-links');
-const overlay = document.querySelector('.overlay');
+function remove() {
+  toggle();
+  brand.classList.remove('blur');
+  intro.classList.remove('blur');
+  works.classList.remove('blur');
+  aboutMyself.classList.remove('blur');
+  hamburger.style.position = 'absolute';
+}
+
 function toggle() {
   if (checkbox.checked) {
     hamburger.style.position = 'fixed';
@@ -17,13 +24,4 @@ function toggle() {
     hamburger.style.position = 'absolute';
     remove();
   }
-}
-
-function remove() {
-  document.getElementById('toggle').checked = false;
-  brand.classList.remove('blur');
-  intro.classList.remove('blur');
-  works.classList.remove('blur');
-  aboutMyself.classList.remove('blur');
-  hamburger.style.position = 'absolute';
 }
