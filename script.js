@@ -5,13 +5,13 @@ const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 const navlinks = document.querySelectorAll('.nav-links');
-checkbox.addEventListener('click', function toggleBlur() {
+checkbox.addEventListener('click', () => {
   brand.classList.toggle('blur');
   intro.classList.toggle('blur');
   works.classList.toggle('blur');
   aboutMyself.classList.toggle('blur');
 
-  navlinks.addEventListener('click', function removeBlur() {
+  navlinks.addEventListener('click', () => {
     document.getElementsByClassName('toggler').checked = false;
     brand.classList.remove('blur');
     intro.classList.remove('blur');
@@ -32,7 +32,7 @@ checkbox.addEventListener('click', function toggleBlur() {
 });
 
 let w = 0;
-window.onresize = function () {
+window.onresize = () => {
   w = window.innerWidth;
   if (w > 768) {
     document.getElementsByClassName('toggler').checked = false;
