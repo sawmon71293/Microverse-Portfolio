@@ -239,6 +239,10 @@ body {
   margin-top: 12px;
 }
 
+.remove {
+  transform: scale(0);
+}
+
 .intro {
   margin-top: 114px;
   margin-left: 24px;
