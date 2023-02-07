@@ -9,6 +9,7 @@ checkbox.addEventListener("click", function (e) {
   intro.classList.toggle("blur");
   works.classList.toggle("blur");
   aboutMyself.classList.toggle("blur");
+
   $(".nav-links").click(function () {
     $(".toggler").prop("checked", false);
     brand.classList.remove("blur");
@@ -17,6 +18,7 @@ checkbox.addEventListener("click", function (e) {
     aboutMyself.classList.remove("blur");
     hamburger.style.position = "absolute";
   });
+
   if (checkbox.checked) {
     hamburger.style.position = "fixed";
   } else {
@@ -29,6 +31,7 @@ window.onresize = function () {
   w = window.innerWidth;
   if (w > 768) {
     $(".toggler").prop("checked", false);
+
     brand.classList.remove("blur");
     intro.classList.remove("blur");
     works.classList.remove("blur");
