@@ -51,7 +51,7 @@ function closeModal(modal) {
 }
 
 function createCard(project, index) {
-  let data_str = encodeURIComponent(JSON.stringify(project));
+  const dataStr = encodeURIComponent(JSON.stringify(project));
   const projectTemplate = `<div class="card">
         <header id="header_${(index += 1)}" >
           <img class="portfolio" src="img/${project.featureImage}" 
@@ -70,7 +70,7 @@ function createCard(project, index) {
           </p>
           <ul class="skills project_${index}">
           </ul>
-          <button class="button" data-project=${data_str} data-toggle="modal" data-modal-target="#modal" > See project </button>
+          <button class="button" data-project=${dataStr} data-toggle="modal" data-modal-target="#modal" > See project </button>
          </div>
         </div>`;
 
@@ -139,7 +139,7 @@ window.onload = () => {
   openModalButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const modal = document.querySelector(button.dataset.modalTarget);
-      let project = JSON.parse(decodeURIComponent(button.dataset.project));
+      const project = JSON.parse(decodeURIComponent(button.dataset.project));
 
       const projectModalTemplate = `
       
@@ -174,9 +174,9 @@ window.onload = () => {
 
       modal.innerHTML += projectModalTemplate;
       project.techStack.forEach((item) => {
-        let listSkills = document.createElement('li');
+        const listSkills = document.createElement('li');
         listSkills.innerText = item;
-        document.querySelector(`.modal-skills`).appendChild(listSkills);
+        document.querySelector('.modal-skills').appendChild(listSkills);
       });
       hamburger.style.display = 'none';
       openModal(modal);
