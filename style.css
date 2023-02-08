@@ -20,6 +20,7 @@ body {
   font-size: 62.5%;
   background-color: #e5e5e5;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .wrapper {
@@ -309,7 +310,7 @@ body {
 }
 
 .portfolio:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition-duration: var(--menu-speed);
 }
 
@@ -567,6 +568,164 @@ textarea::-webkit-input-placeholder {
 
 .inactive {
   transform: rotate(-90deg);
+}
+
+.modal {
+  position: fixed;
+  top: 5%;
+  left: 2%;
+  right: 3%;
+  bottom: 6%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 1.6rem;
+  z-index: 10;
+  background-color: #fff;
+  min-width: 375px;
+  height: 712px;
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modal-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  padding-top: 18px;
+}
+
+.modal-body .modal-exp {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  display: flex;
+  padding-top: 22px;
+}
+
+.canopy {
+  color: #344563;
+  list-style-type: none;
+}
+
+.modal-body .portfolio {
+  width: 311px;
+  height: 220px;
+  margin-top: 20px;
+}
+
+.modal-exp li {
+  margin-right: 32px;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 2rem;
+  color: #7a869a;
+}
+
+.modal-body {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.modal-body p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.modal-body .modal-skills {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6070ff;
+  list-style-type: none;
+  display: flex;
+  margin-top: 15px;
+}
+
+.modal-skills li {
+  margin-right: 20px;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.modal-buttons {
+  display: flex;
+  margin-bottom: 34px;
+}
+
+.modal-buttons .button {
+  margin-left: 12px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+}
+
+.bmr-14 {
+  margin-right: 14px;
+}
+
+.modal-buttons .button img {
+  width: 16px;
+  height: 16px;
+  margin-top: 0;
+}
+
+.modal-buttons .button:hover > p {
+  color: white;
+  background-color: #6070ff;
+}
+
+.modal-buttons .button:hover > img {
+  filter: brightness(0) invert(1);
+}
+
+.modal-buttons .button:hover {
+  cursor: pointer;
+}
+
+.modal-buttons a {
+  text-decoration: none;
+}
+
+.modal-buttons .github {
+  font-size: 20px;
+}
+
+#overlayModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+#overlayModal.active {
+  opacity: 1;
+  background-color: #c1c7d0;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -835,9 +994,23 @@ textarea::-webkit-input-placeholder {
     font-size: 18px;
     line-height: 24px;
   }
+
+  .modal {
+    height: calc(100vh -10px);
+  }
+
+  .modal-body .portfolio {
+    min-width: 655px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+
+  .modal-buttons .button {
+    margin-top: 35px;
+  }
 }
 
-@media screen and (min-width: 1042px) {
+/* @media screen and (min-width: 1200px) {
   .intro {
     margin-top: 142px;
     min-width: 920px;
@@ -867,4 +1040,71 @@ textarea::-webkit-input-placeholder {
   .portfolio {
     height: 448px;
   }
+
+  .modal {
+    min-width: 1156px;
+    height: 1163px;
+    top: 5%;
+    left: 4%;
+    right: 4%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+  .modal-body {
+    margin-left: 42px;
+  }
+
+  .modal-body .portfolio {
+    min-width: 1108px;
+    max-width: auto;
+    height: 586px;
+  }
+
+  .project-wrapper {
+    display: flex;
+  }
+
+  .description {
+    min-width: 800px;
+    height: 382px;
+    margin-right: 20px;
+  }
+
+  .modal-body button {
+    width: 124px;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+  }
+
+  .modal-header {
+    display: flex;
+  }
 }
+
+@media screen and (min-width: 1400px) {
+  .modal {
+    min-width: 1350px;
+    left: 8%;
+    right: 8%;
+  }
+
+  .modal-body {
+    margin-left: 0;
+  }
+
+  .modal-body .portfolio {
+    min-width: 1300px;
+    height: 700px;
+   
+  }
+
+  .description {
+    min-width: 1000px;
+    height: 382px;
+    margin-right: 20px;
+  }
+} */

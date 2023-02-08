@@ -4,6 +4,7 @@ const intro = document.querySelector('.intro');
 const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
+const navLinks = document.querySelectorAll('.nav-links');
 function remove() {
   document.getElementById('toggle').checked = false;
   brand.classList.remove('blur');
@@ -34,9 +35,23 @@ window.onresize = () => {
   }
 };
 
-// card objects
+// Model
+const overlayModal = document.getElementById('overlayModal');
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlayModal.classList.add('active');
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  modal.innerHTML = '';
+  overlayModal.classList.remove('active');
+}
 
 function createCard(project, index) {
+  let data_str = encodeURIComponent(JSON.stringify(project));
   const projectTemplate = `<div class="card">
         <header id="header_${(index += 1)}" >
           <img class="portfolio" src="img/${project.featureImage}" 
@@ -55,9 +70,10 @@ function createCard(project, index) {
           </p>
           <ul class="skills project_${index}">
           </ul>
-          <button class="button" data-toggle="modal" data-target="#projectModal"> See project </button>
+          <button class="button" data-project=${data_str} data-toggle="modal" data-modal-target="#modal" > See project </button>
          </div>
         </div>`;
+
   works.innerHTML += projectTemplate;
   project.techStack.forEach((item) => {
     const list = document.createElement('li');
@@ -73,12 +89,14 @@ function createCard(project, index) {
   }
 }
 
+navLinks.forEach((link) => link.addEventListener('click', remove));
+
 window.onload = () => {
   const projects = [
     {
       name: 'Library',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+        'A daily selection of privately personalized reads sit amet consectetur adipisicing elit.',
       featureImage: 'portfolio1.png',
       techStack: ['html', 'css', 'javascript'],
       liveLink: 'https://sawmon71293.github.io/personal-portfolio/',
@@ -87,16 +105,16 @@ window.onload = () => {
     {
       name: 'Job Agency',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+        'A daily selection of privately personalized readsr sit amet consectetur adipisicing elit.',
       featureImage: 'portfolio2.png',
-      techStack: ['html', 'css', 'javascript', 'Ruby on Rails'],
+      techStack: ['html', 'css', 'javascript'],
       liveLink: 'https://sawmon71293.github.io/personal-portfolio/',
       sourceLink: 'https://github.com/sawmon71293/personal-portfolio',
     },
     {
       name: 'Songs Library',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+        'A daily selection of privately personalized reads dolor sit amet consectetur adipisicing elit. ',
       featureImage: 'portfolio3.png',
       techStack: ['html', 'react', 'Ruby on Rails'],
       liveLink: 'https://sawmon71293.github.io/personal-portfolio/',
@@ -105,7 +123,7 @@ window.onload = () => {
     {
       name: 'Portal',
       description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required',
+        'A daily selection of privately personalized reads sit amet consectetur adipisicing elit. ',
       featureImage: 'portfolio4.png',
       techStack: ['html', 'react', 'Ruby on Rails'],
       liveLink: 'https://sawmon71293.github.io/personal-portfolio/',
@@ -114,5 +132,67 @@ window.onload = () => {
   ];
   projects.forEach((project, index) => {
     createCard(project, index);
+  });
+
+  const openModalButtons = document.querySelectorAll('[data-modal-target]');
+
+  openModalButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const modal = document.querySelector(button.dataset.modalTarget);
+      let project = JSON.parse(decodeURIComponent(button.dataset.project));
+
+      const projectModalTemplate = `
+      
+         <header class="modal-header">
+          <div><h2 id="modal-title">${project.name}</h2></div>
+          <button data-close-button class="close-button">&times;</button>
+         </header>
+          <div class="wrap">
+         <div class="modal-body">
+          <ul class="modal-exp">
+            <li class="canopy">CANOPY</li>
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <img class="portfolio" src="/img/${project.featureImage}" alt="Portfolio">
+          <div class="project-wrapper">
+            <div class="description">
+              <p>${project.description}
+              </p>
+            </div>
+            <div>
+              <ul class="modal-skills" id="modal-skills">
+              </ul>
+              <div class="modal-buttons">
+                <a href="${project.liveLink}"><button class="button"><p class="bmr-14">See Live</p> <img  src="img/Icon.png" alt="live icon"></button></a>
+                <a href="${project.sourceLink}"><button class="button"><p class="bmr-14">See Source</p> <ion-icon class="github"  name="logo-github"></ion-icon></button></a>
+              </div>
+            </div>
+          </div>
+         </div>
+       </div>`;
+
+      modal.innerHTML += projectModalTemplate;
+      project.techStack.forEach((item) => {
+        let listSkills = document.createElement('li');
+        listSkills.innerText = item;
+        document.querySelector(`.modal-skills`).appendChild(listSkills);
+      });
+      hamburger.style.display = 'none';
+      openModal(modal);
+      const closeModalButton = document.querySelector('[data-close-button]');
+      closeModalButton.addEventListener('click', () => {
+        const modal = closeModalButton.closest('.modal');
+        hamburger.style.display = 'flex';
+        closeModal(modal);
+      });
+    });
+  });
+
+  overlayModal.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active');
+    modals.forEach((modal) => {
+      closeModal(modal);
+    });
   });
 };
