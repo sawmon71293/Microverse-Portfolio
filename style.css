@@ -709,8 +709,6 @@ textarea::-webkit-input-placeholder {
   cursor: pointer;
 }
 
-
-
 .modal-buttons .github {
   font-size: 20px;
 }
@@ -998,7 +996,7 @@ textarea::-webkit-input-placeholder {
   }
 
   .modal {
-    height: calc(100vh -10px);
+    height: calc(100vh - 10px);
   }
 
   .modal-body .portfolio {
@@ -1012,7 +1010,7 @@ textarea::-webkit-input-placeholder {
   }
 }
 
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .intro {
     margin-top: 142px;
     min-width: 920px;
@@ -1052,13 +1050,13 @@ textarea::-webkit-input-placeholder {
     max-height: calc(100vh - 100px);
     overflow-y: auto;
   }
+
   .modal-body {
     margin-left: 42px;
   }
 
   .modal-body .portfolio {
     min-width: 1108px;
-    max-width: auto;
     height: 586px;
   }
 
@@ -1075,6 +1073,7 @@ textarea::-webkit-input-placeholder {
   .modal-body button {
     width: 124px;
   }
+
   .wrap {
     display: flex;
     align-items: center;
@@ -1101,7 +1100,6 @@ textarea::-webkit-input-placeholder {
   .modal-body .portfolio {
     min-width: 1300px;
     height: 700px;
-   
   }
 
   .description {
@@ -1109,4 +1107,4 @@ textarea::-webkit-input-placeholder {
     height: 382px;
     margin-right: 20px;
   }
-} 
+}
