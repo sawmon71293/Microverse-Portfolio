@@ -1045,8 +1045,8 @@ textarea::-webkit-input-placeholder {
     min-width: 1156px;
     height: 1163px;
     top: 5%;
-    left: 4%;
-    right: 4%;
+    left: 13%;
+    right: 13%;
     max-height: calc(100vh - 100px);
     overflow-y: auto;
   }
@@ -1083,28 +1083,5 @@ textarea::-webkit-input-placeholder {
 
   .modal-header {
     display: flex;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .modal {
-    min-width: 1350px;
-    left: 8%;
-    right: 8%;
-  }
-
-  .modal-body {
-    margin-left: 0;
-  }
-
-  .modal-body .portfolio {
-    min-width: 1300px;
-    height: 700px;
-  }
-
-  .description {
-    min-width: 1000px;
-    height: 382px;
-    margin-right: 20px;
   }
 }
