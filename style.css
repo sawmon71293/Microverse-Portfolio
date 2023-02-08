@@ -165,6 +165,22 @@ body {
   margin: 0 12px;
 }
 
+.modal-exp li {
+  margin-right: 32px;
+}
+
+.modal-skills li {
+  margin-right: 20px;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.modal-buttons a {
+  text-decoration: none;
+}
+
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
   color: #fff;
@@ -624,10 +640,6 @@ textarea::-webkit-input-placeholder {
   margin-top: 20px;
 }
 
-.modal-exp li {
-  margin-right: 32px;
-}
-
 .modal-header .close-button {
   cursor: pointer;
   border: none;
@@ -657,14 +669,6 @@ textarea::-webkit-input-placeholder {
   list-style-type: none;
   display: flex;
   margin-top: 15px;
-}
-
-.modal-skills li {
-  margin-right: 20px;
-  align-items: center;
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
 }
 
 .modal-buttons {
@@ -705,9 +709,7 @@ textarea::-webkit-input-placeholder {
   cursor: pointer;
 }
 
-.modal-buttons a {
-  text-decoration: none;
-}
+
 
 .modal-buttons .github {
   font-size: 20px;
