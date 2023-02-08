@@ -1003,7 +1003,7 @@ textarea::-webkit-input-placeholder {
 
   .modal-body .portfolio {
     min-width: 655px;
-    height: 400px;
+    height: 350px;
     margin-bottom: 50px;
   }
 
@@ -1012,7 +1012,7 @@ textarea::-webkit-input-placeholder {
   }
 }
 
-/* @media screen and (min-width: 1200px) {
+ @media screen and (min-width: 1200px) {
   .intro {
     margin-top: 142px;
     min-width: 920px;
@@ -1109,4 +1109,4 @@ textarea::-webkit-input-placeholder {
     height: 382px;
     margin-right: 20px;
   }
-} */
+} 
