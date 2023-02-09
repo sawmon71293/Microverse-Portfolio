@@ -549,6 +549,12 @@ input::-webkit-input-placeholder {
   padding-left: 16px;
 }
 
+input[type='text'],
+textarea {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
 textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 15px;
@@ -724,14 +730,6 @@ textarea::-webkit-input-placeholder {
   pointer-events: none;
 }
 
-input[type='text'],
-textarea {
-  padding-left: 10px;
-  box-sizing: border-box;
-}
-
-
-
 .no-outline:focus {
   outline: none;
 }
@@ -746,7 +744,7 @@ textarea {
   margin-bottom: 20px;
   padding: 10px;
   font-size: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   text-align: center;
   display: none;
   border-radius: 5px;
