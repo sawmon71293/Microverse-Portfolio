@@ -246,17 +246,17 @@ function persistForm() {
   });
 }
 
- function restoreForm() {
+function restoreForm() {
   const els = getAllFormEls();
-   els.forEach((el) => {
-     el.value = localStorage.getItem(el.name);
-   });
- }
+  els.forEach((el) => {
+    el.value = localStorage.getItem(el.name);
+  });
+}
 
- restoreForm();
- persistForm();
+restoreForm();
+persistForm();
 
- const submit = document.getElementById('submit');
- submit.addEventListener('click', () => {
+const submit = document.getElementById('submit');
+submit.addEventListener('click', () => {
   validation();
- });
+});
