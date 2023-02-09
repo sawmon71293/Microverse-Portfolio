@@ -208,3 +208,25 @@ window.onload = () => {
     });
   });
 };
+
+// form validation
+function validation() {
+  const email = document.getElementById('email').value;
+  const errorMessage = document.getElementById('error');
+  errorMessage.style.display = 'block';
+  if (email !== String(email).toLowerCase()) {
+    const text = 'Please enter a valid email!';
+    errorMessage.innerText = text;
+    errorMessage.style.background = 'red';
+    errorMessage.style.color = 'black';
+  } else {
+    errorMessage.innerText = 'The form is sent';
+    errorMessage.style.background = 'green';
+    errorMessage.style.color = 'white';
+  }
+}
+
+const submit = document.getElementById('submit');
+submit.addEventListener('click', () => {
+  validation();
+});

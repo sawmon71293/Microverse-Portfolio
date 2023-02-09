@@ -724,10 +724,32 @@ textarea::-webkit-input-placeholder {
   pointer-events: none;
 }
 
+input[type='text'],
+textarea {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+
+
+.no-outline:focus {
+  outline: none;
+}
+
 #overlayModal.active {
   opacity: 1;
   background-color: #c1c7d0;
   pointer-events: none;
+}
+
+#error {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400px;
+  text-align: center;
+  display: none;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
