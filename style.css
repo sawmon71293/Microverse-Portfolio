@@ -1085,3 +1085,15 @@ textarea::-webkit-input-placeholder {
     display: flex;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .modal {
+    min-width: 1156px;
+    height: 1163px;
+    top: 8%;
+    left: 15%;
+    right: 15%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}

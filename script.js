@@ -5,6 +5,7 @@ const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 const navLinks = document.querySelectorAll('.nav-links');
+
 function remove() {
   document.getElementById('toggle').checked = false;
   brand.classList.remove('blur');
@@ -41,6 +42,9 @@ function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('active');
   overlayModal.classList.add('active');
+  navLinks.forEach((link) => {
+    link.style.color = '#c1c7d0';
+  });
 }
 
 function closeModal(modal) {
@@ -48,13 +52,20 @@ function closeModal(modal) {
   modal.classList.remove('active');
   modal.innerHTML = '';
   overlayModal.classList.remove('active');
+  navLinks.forEach((link) => {
+    if (w > 768) {
+      link.style.color = '#344563';
+    } else {
+      link.style.color = '#fff';
+    }
+  });
 }
 
 function createCard(project, index) {
   const dataStr = encodeURIComponent(JSON.stringify(project));
   const projectTemplate = `<div class="card">
         <header id="header_${(index += 1)}" >
-          <img class="portfolio" src="img/${project.featureImage}" 
+          <img class="portfolio" src="./img/${project.featureImage}" 
           alt="Portfolio">
          </header>
          <div class="card_body cb_${index}">
@@ -142,7 +153,6 @@ window.onload = () => {
       const project = JSON.parse(decodeURIComponent(button.dataset.project));
 
       const projectModalTemplate = `
-      
          <header class="modal-header">
           <div><h2 id="modal-title">${project.name}</h2></div>
           <button data-close-button class="close-button">&times;</button>
@@ -154,7 +164,7 @@ window.onload = () => {
             <li>Back End Dev</li>
             <li>2015</li>
           </ul>
-          <img class="portfolio" src="/img/${project.featureImage}" alt="Portfolio">
+          <img class="portfolio" src="./img/${project.featureImage}" alt="Portfolio">
           <div class="project-wrapper">
             <div class="description">
               <p>${project.description}
