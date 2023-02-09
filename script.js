@@ -210,6 +210,7 @@ window.onload = () => {
 };
 
 // form validation
+
 function validation() {
   const email = document.getElementById('email').value;
   const errorMessage = document.getElementById('error');
@@ -245,17 +246,17 @@ function persistForm() {
   });
 }
 
-function restoreForm() {
-  const els = getAllFormEls();
-  els.forEach((el) => {
-    el.value = localStorage.getItem(el.name);
-  });
-}
+// function restoreForm() {
+//   const els = getAllFormEls();
+//   els.forEach((el) => {
+//     el.value = localStorage.getItem(el.name);
+//   });
+// }
 
-restoreForm();
-persistForm();
+// restoreForm();
+// persistForm();
 
-const submit = document.getElementById('submit');
-submit.addEventListener('click', () => {
-  validation();
-});
+// const submit = document.getElementById('submit');
+// submit.addEventListener('click', () => {
+//   validation();
+// });
