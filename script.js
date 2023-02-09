@@ -208,3 +208,39 @@ window.onload = () => {
     });
   });
 };
+
+// form validation
+function validation() {
+  const email = document.getElementById('email').value;
+  const errorMessage = document.getElementById('error');
+  errorMessage.style.display = 'block';
+  if (email !== String(email).toLowerCase()) {
+    const text = 'Please enter a valid email!';
+    errorMessage.innerText = text;
+    errorMessage.style.background = 'red';
+    errorMessage.style.color = 'black';
+  } else {
+    errorMessage.innerText = 'The form is sent';
+    errorMessage.style.background = 'green';
+    errorMessage.style.color = 'white';
+  }
+}
+
+//  save objects to LocalStorage
+
+const formData = [];
+const addFormData = () => {
+  const form = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    text: document.getElementById('message').value,
+  };
+  formData.push(form);
+  document.querySelector('form').reset();
+};
+
+const submit = document.getElementById('submit');
+submit.addEventListener('click', () => {
+  validation();
+  addFormData();
+});
