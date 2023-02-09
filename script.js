@@ -209,8 +209,6 @@ window.onload = () => {
   });
 };
 
-const message = document.getElementById('message').value;
-
 // form validation
 function validation() {
   const email = document.getElementById('email').value;
