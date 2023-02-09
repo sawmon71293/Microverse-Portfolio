@@ -257,6 +257,4 @@ restoreForm();
 persistForm();
 
 const submit = document.getElementById('submit');
-submit.addEventListener('click', () => {
-  validation();
-});
+submit.addEventListener('click', validation);
