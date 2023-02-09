@@ -5,7 +5,6 @@ const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 const navLinks = document.querySelectorAll('.nav-links');
-const body = document.querySelector('body');
 
 function remove() {
   document.getElementById('toggle').checked = false;
