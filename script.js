@@ -209,6 +209,8 @@ window.onload = () => {
   });
 };
 
+const message = document.getElementById('message').value;
+
 // form validation
 function validation() {
   const email = document.getElementById('email').value;
@@ -226,7 +228,28 @@ function validation() {
   }
 }
 
+//  save objects to LocalStorage
+
+const formData = [];
+const addFormData = (e) => {
+  e.preventDefault();
+  const form = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    text: document.getElementById('message').value,
+  };
+  formData.push(form);
+  document.querySelector('form').reset();
+
+  console.warn('added', { formData });
+  const pre = document.querySelector('#message pre');
+  pre.textContent = `\n${JSON.stringify(formData, '\t', 2)}`;
+
+  localStorage.setItem('form data', JSON.stringify(formData));
+};
+
 const submit = document.getElementById('submit');
 submit.addEventListener('click', () => {
   validation();
+  addFormData();
 });

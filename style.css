@@ -545,7 +545,7 @@ input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172b4d;
+  color: #b2bac5;
   padding-left: 16px;
 }
 
@@ -741,6 +741,7 @@ textarea::-webkit-input-placeholder {
 }
 
 #error {
+  margin-top: 10px;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 20px;
