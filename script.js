@@ -231,8 +231,7 @@ function validation() {
 //  save objects to LocalStorage
 
 const formData = [];
-const addFormData = (e) => {
-  e.preventDefault();
+const addFormData = () => {
   const form = {
     name: document.getElementById('name').value,
     email: document.getElementById('email').value,
@@ -240,12 +239,6 @@ const addFormData = (e) => {
   };
   formData.push(form);
   document.querySelector('form').reset();
-
-  console.warn('added', { formData });
-  const pre = document.querySelector('#message pre');
-  pre.textContent = `\n${JSON.stringify(formData, '\t', 2)}`;
-
-  localStorage.setItem('form data', JSON.stringify(formData));
 };
 
 const submit = document.getElementById('submit');
