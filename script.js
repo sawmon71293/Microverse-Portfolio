@@ -5,6 +5,7 @@ const hamburger = document.querySelector('.hamburger');
 const works = document.querySelector('.works');
 const aboutMyself = document.querySelector('.about_myself');
 const navLinks = document.querySelectorAll('.nav-links');
+const body = document.querySelector('body');
 
 function remove() {
   document.getElementById('toggle').checked = false;
@@ -41,6 +42,7 @@ const overlayModal = document.getElementById('overlayModal');
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add('active');
+  window.scrollTo(0, 0);
   overlayModal.classList.add('active');
   navLinks.forEach((link) => {
     link.style.color = '#c1c7d0';
@@ -51,6 +53,7 @@ function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   modal.innerHTML = '';
+
   overlayModal.classList.remove('active');
   navLinks.forEach((link) => {
     if (w > 768) {
@@ -174,7 +177,7 @@ window.onload = () => {
               <ul class="modal-skills" id="modal-skills">
               </ul>
               <div class="modal-buttons">
-                <a href="${project.liveLink}"><button class="button"><p class="bmr-14">See Live</p> <img  src="img/Icon.png" alt="live icon"></button></a>
+                <a href="${project.liveLink}"><button class="button mr12"><p class="bmr-14">See Live</p> <img  src="img/Icon.png" alt="live icon"></button></a>
                 <a href="${project.sourceLink}"><button class="button"><p class="bmr-14">See Source</p> <ion-icon class="github"  name="logo-github"></ion-icon></button></a>
               </div>
             </div>
