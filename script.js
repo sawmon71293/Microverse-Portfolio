@@ -80,7 +80,7 @@ function createCard(project, index) {
           </ul>
           </div>
           <p class="content">${project.description}
-          </p>
+          </p>              
           <ul class="skills project_${index}">
           </ul>
           <button class="button" data-project=${dataStr} data-toggle="modal" data-modal-target="#modal" > See project </button>
@@ -210,6 +210,7 @@ window.onload = () => {
 };
 
 // form validation
+
 function validation() {
   const email = document.getElementById('email').value;
   const errorMessage = document.getElementById('error');
@@ -228,19 +229,32 @@ function validation() {
 
 //  save objects to LocalStorage
 
-const formData = [];
-const addFormData = () => {
-  const form = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('email').value,
-    text: document.getElementById('message').value,
-  };
-  formData.push(form);
-  document.querySelector('form').reset();
-};
+const form = document.querySelector('form');
+const formEls = ['input[type=text]', 'input[type=email]', 'textarea'];
+
+function getAllFormEls() {
+  const els = formEls.map((el) => Array.from(form.querySelectorAll(el)));
+  return els.flat();
+}
+
+function persistForm() {
+  const els = getAllFormEls();
+  els.forEach((el) => {
+    el.addEventListener('change', () => {
+      localStorage.setItem(el.name, el.value);
+    });
+  });
+}
+
+function restoreForm() {
+  const els = getAllFormEls();
+  els.forEach((el) => {
+    el.value = localStorage.getItem(el.name);
+  });
+}
+
+restoreForm();
+persistForm();
 
 const submit = document.getElementById('submit');
-submit.addEventListener('click', () => {
-  validation();
-  addFormData();
-});
+submit.addEventListener('click', validation);
