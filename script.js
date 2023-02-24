@@ -23,7 +23,6 @@ function toggle() {
     works.classList.toggle('blur');
     aboutMyself.classList.toggle('blur');
   } else {
-    hamburger.style.position = 'absolute';
     remove();
   }
 }
@@ -52,9 +51,10 @@ function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   modal.innerHTML = '';
-
+  remove();
   overlayModal.classList.remove('active');
   navLinks.forEach((link) => {
+    const w = window.innerWidth;
     if (w > 768) {
       link.style.color = '#344563';
     } else {
@@ -195,7 +195,11 @@ window.onload = () => {
       const closeModalButton = document.querySelector('[data-close-button]');
       closeModalButton.addEventListener('click', () => {
         const modal = closeModalButton.closest('.modal');
-        hamburger.style.display = 'flex';
+        const w = window.innerWidth;
+        if (w < 768) {
+          hamburger.style.display = 'flex';
+        }
+
         closeModal(modal);
       });
     });

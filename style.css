@@ -884,7 +884,7 @@ textarea::-webkit-input-placeholder {
   .card {
     display: flex;
     flex-direction: row;
-    width: 98%;
+    width: 89%;
     height: 430px;
   }
 
@@ -1053,7 +1053,8 @@ textarea::-webkit-input-placeholder {
   }
 
   .menu-wrap .menu > div {
-    margin-right: 145px;
+    margin-right: 236px;
+    margin-top: 3rem;
   }
 
   .card {
@@ -1113,10 +1114,7 @@ textarea::-webkit-input-placeholder {
   .modal {
     min-width: 1156px;
     height: 1163px;
-    top: 8%;
-    left: 16%;
-    right: 17%;
-    bottom: 0%;
+    inset: 8% 17% 0% 7%;
     overflow: hidden;
     position: absolute;
   }
