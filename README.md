@@ -55,7 +55,7 @@ This is to showcase my abilities.
 
 ## 🚀 Live Demo <a name="live-demo" title="Coming Soon"></a>
 
-https://sawmon71293.github.io/personal-portfolio/
+https://sawmon71293.github.io/Porfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -77,7 +77,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone git@github.com:sawmon71293/personal-portfolio.git
+  git clone git@github.com:sawmon71293/Portfolio.git
 ```
 
 ### Install
