@@ -54,8 +54,8 @@ This is to showcase my abilities.
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo" title="Coming Soon"></a>
+- Live:[@Live]([https://github.com/sawmon71293/](https://sawmon71293.github.io/Porfolio/))
 
-https://sawmon71293.github.io/Porfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
