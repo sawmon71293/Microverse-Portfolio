@@ -109,11 +109,11 @@ window.onload = () => {
     {
       name: 'Library',
       description:
-        'A daily selection of privately personalized reads sit amet consectetur adipisicing elit.',
-      featureImage: 'portfolio1.png',
+        'To-do-list app showcase ES6 module, HTML and CSS best practices.',
+      featureImage: 'todo.png',
       techStack: ['html', 'css', 'javascript'],
-      liveLink: 'https://sawmon71293.github.io/personal-portfolio/',
-      sourceLink: 'https://github.com/sawmon71293/personal-portfolio',
+      liveLink: 'https://sawmon71293.github.io/ToDoList/',
+      sourceLink: 'https://github.com/sawmon71293/ToDoList',
     },
     {
       name: 'Job Agency',
