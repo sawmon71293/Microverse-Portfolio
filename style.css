@@ -25,9 +25,10 @@ body {
 .wrapper {
   min-width: 375px;
   height: 718px;
-  background: url(img/bg.png) no-repeat white;
+  background: url(img/bg.jpg) no-repeat white;
   background-size: cover;
   border-radius: 0 0 0 50px;
+  
 }
 
 /* Start of menu */
@@ -260,6 +261,7 @@ body {
   margin-left: 24px;
   margin-right: 24px;
   width: 327px;
+   
 }
 
 .branding {
@@ -879,6 +881,7 @@ textarea::-webkit-input-placeholder {
     width: 100vw;
     row-gap: 142px;
     padding-top: 142px;
+    margin-left: 4%;
   }
 
   .card {
